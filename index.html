@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="java script.js"></script>
+	<title>Companii</title>
+</head>
+<body>
+	<div class="container">
+		<div id="Glav" class="Glav" onclick="Entrance()">
+			<center><h1><p>Играть</p></h1></center>
+			
+		</div>
+		<div class="recovery"  id="recovery" onclick="recovery()"><p>Начать с начала</p></div>
+		<div class="Name" id="Name">
+			<div class="My_Name">
+				<p>Введите наименование вашей компании<br>
+                <input  type="text" id="Name_Player" size="40" value="Моя компания" >
+
+			<div class="Button_Name">
+				<div class="B_Start" onclick="write_a_name()">
+					<p>Начать</p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="Game" id="Game">
+			<div class="Game_head">
+				<div class="company" id="companyPlayer" onclick="Open_I_Player()">
+					<p id="Name_companyPlayer">dddd</p>
+				</div>
+				<div class="company" id="company_Bot_Id2" onclick="Player_2()">
+					<p>Компания 2</p>
+				</div>
+				<div class="company" id="company_Bot_Id3" onclick="Player_3()">
+					<p>Компания 3</p>
+				</div>
+				<div class="company" id="company_Bot_Id4" onclick="Player_4()">
+					<p>Компания 4</p>
+				</div>
+				<div class="company" id="company_Bot_Id5" onclick="Player_5()">
+					<p>Компания 5</p>
+				</div>
+			</div>
+
+			<div class="Player" id="I_Player">
+				<div class="I_Player_head">
+					<div class="I_Player_head_values" id="I_Player_head-company_value"><p>Стоимость компании 0 ₽</p></div>
+					<div class="I_Player_head_values" id="I_Player_head-resources"><p id="Bank">Банк 0 ₽</p></div>
+					<div class="I_Player_head_values" id="I_Player_head-revenue"><p>Добыча 0 ₽ в мин</p></div>
+				</div>
+				<div class="PlayerTTX">
+					<div class="Player_XP">
+						<p id="Player_XP_p">Опыт: 0</p>
+					</div>
+					<div class="Player_LVL">
+						<p id="Player_LVL_p">Уровень: 1</p>
+					</div>
+				</div>
+				<div class="Work">
+					<div class="I_Work" id="I_Work" onclick="Work_Player()">
+						<p id="I_Work_p" >Работать + 1₽</p>
+					</div>
+
+					<div class="worker">
+						<div class="worker_p">
+							<p>Нанять рабочих</p>
+						</div>
+
+						<div class="worker_0" id="worker_1" onclick="F_worker_1()">100 ₽ <p>Добыча + 1 ₽</p></div>
+						<div class="worker_0" id="worker_3" onclick="F_worker_3()">300 ₽ <p>Добыча + 3 ₽</p></div>
+						<div class="worker_0" id="worker_5" onclick="F_worker_5()">500 ₽ <p>Добыча + 5 ₽</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="Player" id="Player_2">
+				<h1>2</h1>
+			</div>
+			<div class="Player" id="Player_3">
+				<h1>3</h1>
+			</div>
+			<div class="Player" id="Player_4">
+				<h1>4</h1>
+			</div>
+			<div class="Player" id="Player_5">
+				<h1>5</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

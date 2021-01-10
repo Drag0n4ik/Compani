@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;-webkit-touch-callout: none;
+  -webkit-user-select: none;   
+  -khtml-user-select: none;    
+  -moz-user-select: none;      
+  -ms-user-select: none;       
+  user-select: none;           
+	-webkit-touch-callout: none; 
+  -webkit-user-select: none;   
+  -khtml-user-select: none;    
+  -moz-user-select: none;      
+  -ms-user-select: none;       
+  user-select: none;           
+}
+
+.container{
+	display: block;
+	width: 700px;
+	height: 500px;
+	margin: auto;
+	background: #999999;
+}
+.Glav{
+	margin: auto;
+	background: green;
+	width: 350px;
+	height: 350px;
+	border-radius: 100%;
+}
+.Glav p{
+	padding-top: 40%;
+}
+.recovery{
+	width: 250px;
+	height: 30px;
+	background: red;
+	margin: 20px auto;
+	text-align: center;
+
+}
+.recovery P{
+	padding-top: 5px;
+}
+.Name{
+	display: none;
+}
+.My_Name{
+	text-align: center;
+
+}
+.My_Name p{
+	padding-top: 3%;
+}
+.Button_Name{
+	margin: auto;
+}
+.B_Start{
+	margin: 18% auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: #678;
+	transition: 1s;
+
+}
+.B_Start p{
+	text-align: center;
+	padding-top: 45%;
+}
+.B_Start:hover{
+	transition: 2s;
+	background: #674;
+
+}
+.Game{
+	display: none;
+}
+.Game_head{
+	margin: auto;
+	text-align: center;
+	background: #8798; 
+}
+.company{
+	display: inline-block;
+	text-align: center;
+	margin: 3% 1%;
+	border: black 2px solid;
+
+}
+.company p {
+	padding: 5px;
+}
+.Player{
+	display: none;
+	margin: 5px auto;
+	width: 650px;
+	height: 410px;
+	
+}
+#I_Player{
+	display: block;
+}
+.I_Player_head{
+	display: block;
+	text-align: center;
+}
+.I_Player_head_values{
+	width: 30%;
+	height: 15px;
+	margin: auto;
+	display: inline-block;
+	border-radius: 5%;
+	border: 2px black solid;
+	padding: 5px;
+}
+.I_Player_head_values p{
+	
+}
+
+/*   Моя компания  */
+.PlayerTTX{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.Player_XP , .Player_LVL{
+	display: inline-block;
+	border: 2px black solid;
+	margin: 10px;
+	text-align: center;
+}
+.Player_XP p , .Player_LVL p{
+	padding: 5px;
+}
+.I_Work{
+	display: block;
+	margin: 20px auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background: #789;
+	text-align: center;
+}
+.worker{
+	text-align: center;
+}
+.I_Work p{
+	padding-top: 45%;
+}
+
+.worker_0{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	border: 2px black solid;
+	margin: 10px;
+	background: #459;
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+.worker_p{
+	margin-bottom: 15px;
+}
+.worker_p p{
+	text-align: center;
+	font-size: 2em;
+}
+.worker_0 p{
+	padding: 5px;
+}
+/*  компания 2 */
+
+
+/*  компания 3 */
+
+/*  компания 4 */
+
+/*  компания 5 */
