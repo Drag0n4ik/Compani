@@ -109,10 +109,11 @@ function update_player(){
 
 
 
-
+			let W = 0;
+			W = (parseInt(localStorage.secent_1) + parseInt(localStorage.secent_3) + parseInt(localStorage.secent_5))
 			//
-
-			
+			document.getElementById('dobiha').innerHTML = "Добыча " + W  + " ₽ в сек";
+			document.getElementById('Stoimost').innerHTML = "Стоимость компании " + Math.ceil(((parseInt(W) / 10) + (parseInt(localStorage.LVL_company)*100) + (parseInt(localStorage.bank)/10))) + " ₽ ";
 
 			// Уровни
 			if (localStorage.XP_3 >= 20 && localStorage.LVL_company == 1)  {
@@ -160,6 +161,9 @@ function update_player(){
 		localStorage._if = 1;
 		
 		localStorage.setItem('symma', 0);
+		localStorage.setItem('secent_1', 0);
+		localStorage.setItem('secent_3', 0);
+		localStorage.setItem('secent_5', 0);
 		localStorage.setItem('worker_1', 0);
 		localStorage.setItem('worker_3', 0);
 		localStorage.setItem('worker_5', 0);
@@ -213,6 +217,7 @@ function F_worker_1(){
 		localStorage.trati = parseInt(localStorage.trati) + 10;
 		
 		localStorage.worker_1 = parseInt(localStorage.worker_1) + 1;
+		localStorage.secent_1 = parseInt(localStorage.worker_1) * 1;
 
 	}
 }
@@ -224,10 +229,11 @@ function F_worker_1_S(){
 }
 
 function F_worker_3(){
-	if (company_bank_0 >= 30) {
-		localStorage.trati = parseInt(localStorage.trati) + 30;
+	if (company_bank_0 >= 300) {
+		localStorage.trati = parseInt(localStorage.trati) + 300;
 		
-		localStorage.worker_3 = parseInt(localStorage.worker_1) + 1;
+		localStorage.worker_3 = parseInt(localStorage.worker_3) + 1;
+		localStorage.secent_3 = parseInt(localStorage.worker_3) * 3;
 	}
 }
 function F_worker_3_S(){
@@ -236,10 +242,11 @@ function F_worker_3_S(){
 	localStorage.symma = parseInt(localStorage.symma) + symma_3
 }
 function F_worker_5(){
-	if (company_bank_0 >= 50) {
-		localStorage.trati = parseInt(localStorage.trati) + 50;
+	if (company_bank_0 >= 500) {
+		localStorage.trati = parseInt(localStorage.trati) + 500;
 		
 		localStorage.worker_5 = parseInt(localStorage.worker_5) + 1;
+		localStorage.secent_5 = parseInt(localStorage.worker_5) * 5;
 	}
 }
 function F_worker_5_S(){

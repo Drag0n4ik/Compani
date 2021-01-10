@@ -16,7 +16,7 @@
 
 .container{
 	display: block;
-	width: 700px;
+	width: 750px;
 	height: 500px;
 	margin: auto;
 	background: #999999;
@@ -106,7 +106,7 @@
 	text-align: center;
 }
 .I_Player_head_values{
-	width: 30%;
+	width: 30.5%;
 	height: 15px;
 	margin: auto;
 	display: inline-block;
