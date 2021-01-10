@@ -27,6 +27,7 @@ function Entrance(){
 		setInterval(F_worker_1_S, 1000);
 		setInterval(F_worker_3_S, 1000);
 		setInterval(F_worker_5_S, 1000);
+		document.getElementById('Name_companyPlayer').innerHTML = localStorage.Name;
 	}else{
 		Game();
 	}
@@ -48,7 +49,7 @@ function write_a_name(){
 	let Name = localStorage.Name;
 	document.getElementById('Name').style.display="none";
 	document.getElementById('Game').style.display="block";
-	document.getElementById('Name_companyPlayer').innerHTML = Name;
+	document.getElementById('Name_companyPlayer').innerHTML = localStorage.Name;
 }
 
 function company(){
