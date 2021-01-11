@@ -1,0 +1,8 @@
+#MenuBottonReference , #MenuBottonAgreement , #MenuBottonSponsor{
+	display: none;
+	font-size: 1.2em;
+}
+.MenuBottonReferenceText , .MenuBottonAgreementText , .MenuBottonAgreementText {
+	padding: 15px;
+
+}

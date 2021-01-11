@@ -1,4 +1,4 @@
-
+// проверь это 
 let GL = 0;
 let trati = 0;
 let PC;
@@ -18,7 +18,8 @@ let worker_5 = 0;
 function Entrance(){
 	if (localStorage.PC == 1) {
 		Open_I_Player();
-		
+		StartBot();
+		document.getElementById('div').style.display="none";
 		document.getElementById('Glav').style.display="none";
 		document.getElementById('Game').style.display="block";
 		document.getElementById('Name').style.display="none";
@@ -28,17 +29,23 @@ function Entrance(){
 		setInterval(F_worker_3_S, 1000);
 		setInterval(F_worker_5_S, 1000);
 		document.getElementById('Name_companyPlayer').innerHTML = localStorage.Name;
+		document.getElementById('Name_companyPlayer_2').innerHTML = localStorage.Name_2;
+		document.getElementById('Name_companyPlayer_3').innerHTML = localStorage.Name_3;
+		document.getElementById('Name_companyPlayer_4').innerHTML = localStorage.Name_4;
+		document.getElementById('Name_companyPlayer_5').innerHTML = localStorage.Name_5;
 	}else{
 		Game();
 	}
 }
 function Game(){
+	document.getElementById('div').style.display="none";
 	document.getElementById('recovery').style.display="none";
 	document.getElementById('Game').style.display="none";
 	document.getElementById('Name').style.display="block";
 	document.getElementById('Glav').style.display="none";
 }
 function write_a_name(){
+	StartBot();
 	setInterval(update_player, 100);
 	setInterval(F_worker_1_S, 1000);
 	setInterval(F_worker_3_S, 1000);
@@ -46,10 +53,19 @@ function write_a_name(){
 	let PC = localStorage.setItem('PC', 0);
 	localStorage.PC = 1;
 	localStorage.setItem('Name', document.getElementById('Name_Player').value);
-	let Name = localStorage.Name;
+	localStorage.setItem('Name_2', document.getElementById('Name_Player_2').value);
+	localStorage.setItem('Name_3', document.getElementById('Name_Player_3').value);	
+	localStorage.setItem('Name_4', document.getElementById('Name_Player_4').value);
+	localStorage.setItem('Name_5', document.getElementById('Name_Player_5').value);
+
+
 	document.getElementById('Name').style.display="none";
 	document.getElementById('Game').style.display="block";
 	document.getElementById('Name_companyPlayer').innerHTML = localStorage.Name;
+	document.getElementById('Name_companyPlayer_2').innerHTML = localStorage.Name_2;
+	document.getElementById('Name_companyPlayer_3').innerHTML = localStorage.Name_3;
+	document.getElementById('Name_companyPlayer_4').innerHTML = localStorage.Name_4;
+	document.getElementById('Name_companyPlayer_5').innerHTML = localStorage.Name_5;
 }
 
 function company(){
@@ -58,26 +74,37 @@ function company(){
 	document.getElementById('Player_3').style.display="none";
 	document.getElementById('Player_4').style.display="none";
 	document.getElementById('Player_5').style.display="none";
+
+	document.getElementById('companyPlayer').style.background="#999";
+	document.getElementById('company_Bot_Id2').style.background="#999";
+	document.getElementById('company_Bot_Id3').style.background="#999";
+	document.getElementById('company_Bot_Id4').style.background="#999";
+	document.getElementById('company_Bot_Id5').style.background="#999";
 }
 function Open_I_Player(){
 	company();
 	document.getElementById('I_Player').style.display="block";
+	document.getElementById('companyPlayer').style.background="#998";
 }
 function Player_2(){
 	company();
 	document.getElementById('Player_2').style.display="block";
+	document.getElementById('company_Bot_Id2').style.background="#998";
 }
 function Player_3(){
 	company();
 	document.getElementById('Player_3').style.display="block";
+	document.getElementById('company_Bot_Id3').style.background="#998";
 }
 function Player_4(){
 	company();
 	document.getElementById('Player_4').style.display="block";
+	document.getElementById('company_Bot_Id4').style.background="#998";
 }
 function Player_5(){
 	company();
 	document.getElementById('Player_5').style.display="block";
+	document.getElementById('company_Bot_Id5').style.background="#998";
 }
 
 // компания игрока функционал
@@ -158,6 +185,11 @@ function update_player(){
 		
 	}else{
 
+
+
+
+		// игрок
+
 		localStorage._if = 1;
 		
 		localStorage.setItem('symma', 0);
@@ -179,7 +211,20 @@ function update_player(){
 		localStorage.setItem('XP_4', 0);
 		XP_company = XP_company + parseInt(localStorage.XP_2) ;
 		company_bank = company_bank + parseInt(localStorage.bank_2) ;
+
+
+
+
+		// бот 2 
+		
+		
+
+
+
+
 	}
+
+
 
 	//parseInt
 
@@ -257,4 +302,38 @@ function F_worker_5_S(){
 function recovery(){
 	localStorage.clear();
 	Game();
+}
+// Запуск ботов
+function StartBot(){
+	Bot1();
+	Bot2();
+	Bot3();
+	Bot4();
+}
+
+// Бот 1(компания 2)
+function Bot1(){
+	document.getElementById('C-N2-p').innerHTML = "2s";
+	
+	//setInterval(Bot1Update, 1000);
+}
+function Bot1Update(){
+	document.getElementById('L-C2-p').innerHTML = "1l";
+	document.getElementById('S-C2-p').innerHTML = "Стоимость компании " + "10000" + " ₽";
+	document.getElementById('C-M2-p').innerHTML = "Рабочих " + "10";
+}
+
+// Бот 2(компания 3)
+function Bot2(){
+	
+}
+
+// Бот 3(компания 4)
+function Bot3(){
+	
+}
+
+// Бот 4(компания 5)
+function Bot4(){
+	
 }

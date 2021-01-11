@@ -6,7 +6,7 @@
   -moz-user-select: none;      
   -ms-user-select: none;       
   user-select: none;           
-	-webkit-touch-callout: none; 
+  -webkit-touch-callout: none; 
   -webkit-user-select: none;   
   -khtml-user-select: none;    
   -moz-user-select: none;      
@@ -14,14 +14,41 @@
   user-select: none;           
 }
 
+
+.MenuBotton{
+	width: 750px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	background: #997;
+}
+.MenuBotton_0{
+	width: 24.6%;
+	height: 50px;
+	background: #997;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.MenuBotton_0 p{
+	padding-top: 5%;
+}
+#MenuBotton_Play{
+	background: #999;
+}
 .container{
 	display: block;
 	width: 750px;
 	height: 500px;
 	margin: auto;
-	background: #999999;
+	background: #999;
+}
+.div{
+	height: 20px;
 }
 .Glav{
+	display: block;
 	margin: auto;
 	background: green;
 	width: 350px;
@@ -56,9 +83,9 @@
 	margin: auto;
 }
 .B_Start{
-	margin: 18% auto;
-	width: 200px;
-	height: 200px;
+	margin: 2.5% auto;
+	width: 150px;
+	height: 150px;
 	border-radius: 100%;
 	background: #678;
 	transition: 1s;
@@ -79,7 +106,7 @@
 .Game_head{
 	margin: auto;
 	text-align: center;
-	background: #8798; 
+	background: #999; 
 }
 .company{
 	display: inline-block;
@@ -100,6 +127,7 @@
 }
 #I_Player{
 	display: block;
+
 }
 .I_Player_head{
 	display: block;
@@ -178,3 +206,76 @@
 /*  компания 4 */
 
 /*  компания 5 */
+.PlayerBot{
+	display: none;
+	font-size: 1.5em;
+	margin: auto;
+	text-align: center;
+
+
+}
+.CompanyNameAll{
+
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.CompanyName2{
+	width: 50%;
+	height: 50px;
+	margin: 10px auto;
+	border-bottom: black 2px solid;
+	border-top: black 2px solid;
+	border-left: black 2px solid;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	display: inline-block;
+
+}
+
+.LevelCompanyAll{
+	background: #786;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	display: inline-block;
+	border: 2px black solid;
+	text-align: center;
+	margin: 0px 0px 0px -38px
+}
+.CompanyNameAll p{
+	padding:10px;
+}
+.SumCompanyAll{
+	margin: 10px auto;
+	text-align: center;
+	width: 50%;
+	border: 2px black solid;
+}
+.SumCompanyAll p{
+	padding:5px;
+}
+.CountManagerAll{
+	display: inline-block;
+	margin: 10px auto;
+	text-align: center;
+	border: 2px black solid;
+}
+.CountManagerAll p{
+	padding:5px;
+}
+
+.LevelCompanyAll p{
+	padding:10px;
+}
+.BuyAll{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background: #789;
+	margin: auto;
+	text-align: center;
+}
+.BuyAll p{
+	padding-top: 40%;
+}

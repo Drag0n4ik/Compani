@@ -4,20 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="Menu.css">
 	<script src="java script.js"></script>
-	<title>Companii</title>
+	<script src="Menu.js"></script>
+	<title>Захвати компании</title>
 </head>
 <body>
-	<div class="container">
+	<div class="MenuBotton">
+		<div class="MenuBotton_0" id="MenuBotton_Play" onclick="Open_Play()"><p>Играть</p></div>
+		<div class="MenuBotton_0" id="MenuBotton_Reference" onclick="Open_Reference()"><p>Справка</p></div>
+		<div class="MenuBotton_0" id="MenuBotton_Agreement" onclick="Open_Agreement()"><p>Соглашение</p></div>
+		<div class="MenuBotton_0" id="MenuBotton_Sponsor" onclick="Open_Sponsor()"><p>Помощь проекту</p></div>
+	</div>
+	
+	<div class="container" id="MenuBottonPlay">
+		<div class="div" id="div"></div>
 		<div id="Glav" class="Glav" onclick="Entrance()">
-			<center><h1><p>Играть</p></h1></center>
-			
+				<center><h1><p>Играть</p></h1></center>
+				
 		</div>
 		<div class="recovery"  id="recovery" onclick="recovery()"><p>Начать с начала</p></div>
 		<div class="Name" id="Name">
 			<div class="My_Name">
 				<p>Введите наименование вашей компании<br>
                 <input  type="text" id="Name_Player" size="40" value="Моя компания" >
+                <p>Введите наименование компании 2<br>
+                <input  type="text" id="Name_Player_2" size="40" value="компания 2" >
+                <p>Введите наименование компании 3<br>
+                <input  type="text" id="Name_Player_3" size="40" value="компания 3" >
+                <p>Введите наименование компании 4<br>
+                <input  type="text" id="Name_Player_4" size="40" value="компания 4" >
+                <p>Введите наименование компании 5<br>
+                <input  type="text" id="Name_Player_5" size="40" value="компания 5" >
+                
 
 			<div class="Button_Name">
 				<div class="B_Start" onclick="write_a_name()">
@@ -33,16 +52,16 @@
 					<p id="Name_companyPlayer">dddd</p>
 				</div>
 				<div class="company" id="company_Bot_Id2" onclick="Player_2()">
-					<p>Компания 2</p>
+					<p id="Name_companyPlayer_2">Компания 2</p>
 				</div>
 				<div class="company" id="company_Bot_Id3" onclick="Player_3()">
-					<p>Компания 3</p>
+					<p id="Name_companyPlayer_3">Компания 3</p>
 				</div>
 				<div class="company" id="company_Bot_Id4" onclick="Player_4()">
-					<p>Компания 4</p>
+					<p id="Name_companyPlayer_4">Компания 4</p>
 				</div>
 				<div class="company" id="company_Bot_Id5" onclick="Player_5()">
-					<p>Компания 5</p>
+					<p id="Name_companyPlayer_5">Компания 5</p>
 				</div>
 			</div>
 
@@ -76,18 +95,100 @@
 					</div>
 				</div>
 			</div>
-			<div class="Player" id="Player_2">
-				<h1>2</h1>
+			<div class="PlayerBot" id="Player_2">
+				<div class="CompanyNameAll">
+					<div class="CompanyName2"><p id="C-N2-p">2</p></div>
+					<div class="LevelCompanyAll">
+					<p id="L-C2-p">1</p>
+				</div>
+				</div>
+				
+				<div class="SumCompanyAll">
+					<p id="S-C2-p">Стоимость компании 10000 ₽</p>
+				</div>
+				
+				<div class="CountManagerAll">
+					<p id="C-M2-p">Рабочих 3</p>
+				</div>
+				<div class="BuyAll">
+					<p>Купить</p>
+				</div>
 			</div>
-			<div class="Player" id="Player_3">
-				<h1>3</h1>
+			<div class="PlayerBot" id="Player_3">
+				<div class="CompanyNameAll">
+					<div class="CompanyName2"><p id="C-N3-p">3</p></div>
+					<div class="LevelCompanyAll">
+					<p>1</p>
+				</div>
+				</div>
+				
+				<div class="SumCompanyAll">
+					<p>Стоимость компании 10000 Р</p>
+				</div>
+				
+				<div class="CountManagerAll">
+					<p>Рабочих 3</p>
+				</div>
+				<div class="BuyAll">
+					<p>Купить</p>
+				</div>
 			</div>
-			<div class="Player" id="Player_4">
-				<h1>4</h1>
+			<div class="PlayerBot" id="Player_4">
+				<div class="CompanyNameAll">
+					<div class="CompanyName2"><p id="C-N4-p">4</p></div>
+					<div class="LevelCompanyAll">
+					<p>1</p>
+				</div>
+				</div>
+				
+				<div class="SumCompanyAll">
+					<p>Стоимость компании 10000 Р</p>
+				</div>
+				
+				<div class="CountManagerAll">
+					<p>Рабочих 3</p>
+				</div>
+				<div class="BuyAll">
+					<p>Купить</p>
+				</div>
 			</div>
-			<div class="Player" id="Player_5">
-				<h1>5</h1>
+			<div class="PlayerBot" id="Player_5">
+				<div class="CompanyNameAll">
+					<div class="CompanyName2"><p id="C-N5-p">5</p></div>
+					<div class="LevelCompanyAll">
+					<p>1</p>
+				</div>
+				</div>
+				
+				<div class="SumCompanyAll">
+					<p>Стоимость компании 10000 Р</p>
+				</div>
+				
+				<div class="CountManagerAll">
+					<p>Рабочих 3</p>
+				</div>
+				<div class="BuyAll">
+					<p>Купить</p>
+				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="container" id="MenuBottonReference">
+		<div class="MenuBottonReferenceText">
+			<p><h3>Об игре </h3>Захвати компании - это увлекательная игра в которой ты управляющий.</p>
+		<p><h3>Цель </h3> выкупить все компании.  </p>
+		</div>
+	</div>
+	<div class="container" id="MenuBottonAgreement">
+		<div class="MenuBottonAgreementText">
+			<p><h3>Любое использование игры означает, что вы полностью прочитали, поняли и согласны с условиями данного пользовательского соглашения, обязуетесь их соблюдать и нести ответственность за их нарушение.</h3></p>
+		<p><h3>Администрация имеет право:</h3>1. Ограничивать функциональность Игры полностью или частично по собственному усмотрению (в том числе удалить Игру с Сайта). Администрация не обязана предупреждать Пользователя об ограничении функциональности Игры и не несет ответственности за вред, причинённый Пользователю в результате ограничения функциональности Игры; <br>2. Изменять по собственному усмотрению любые параметры Игры</p>
+		</div>
+	</div>
+	<div class="container" id="MenuBottonSponsor">
+		<div class="MenuBottonAgreementText">
+			
 		</div>
 	</div>
 </body>
