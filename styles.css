@@ -121,7 +121,6 @@
 .Player{
 	display: none;
 	margin: 5px auto;
-	width: 650px;
 	height: 410px;
 	
 }
@@ -163,9 +162,9 @@
 }
 .I_Work{
 	display: block;
-	margin: 20px auto;
-	width: 150px;
-	height: 150px;
+	margin: 30px auto;
+	width: 200px;
+	height: 200px;
 	border-radius: 100%;
 	background: #789;
 	text-align: center;
