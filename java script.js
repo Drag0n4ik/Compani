@@ -1,4 +1,4 @@
-// проверь это 
+let zzzz = 0 
 let GL = 0;
 let trati = 0;
 let PC;
@@ -167,19 +167,27 @@ function update_player(){
 							if (localStorage.IdBot4 == 1) {
 								if (localStorage.IdBot5 == 1) {
 											document.getElementById('ShopBot5').innerHTML = "Куплен "
-											document.getElementById('Bank').innerHTML = "Банк " + (parseInt(localStorage.bank) + parseInt(localStorage.Money2) +  parseInt(localStorage.Money3) + parseInt(localStorage.Money4) + parseInt(localStorage.Money5)) + " ₽"; // вывод 5
-											alert("УУУУУРРРРРАААА Игра пройдена " )
+											localStorage.bank = (parseInt(localStorage.bank) + parseInt(localStorage.Money2) +  parseInt(localStorage.Money3) + parseInt(localStorage.Money4) + parseInt(localStorage.Money5))
+											document.getElementById('Bank').innerHTML = "Банк " + parseInt(localStorage.bank) + " ₽"; // вывод 5
+											if (zzzz == 0 ) {
+												alert("УУУУУРРРРРАААА Игра пройдена " );
+												zzzz = 1;
+											}
+											
 								}else{
 										document.getElementById('ShopBot4').innerHTML = "Куплен "
+										localStorage.bank = (parseInt(localStorage.bank) + parseInt(localStorage.Money2) +  parseInt(localStorage.Money3) + parseInt(localStorage.Money4))
 										document.getElementById('Bank').innerHTML = "Банк " + (parseInt(localStorage.bank) + parseInt(localStorage.Money2) +  parseInt(localStorage.Money3) + parseInt(localStorage.Money4)) + " ₽"; // вывод 4 
 								}
 							}else{
 									document.getElementById('ShopBot3').innerHTML = "Куплен "
-									document.getElementById('Bank').innerHTML = "Банк " + (parseInt(localStorage.bank) + parseInt(localStorage.Money2) + parseInt(localStorage.Money3)) + " ₽"; // вывод 3 
+									localStorage.bank = (parseInt(localStorage.bank) + parseInt(localStorage.Money2) + parseInt(localStorage.Money3))
+									document.getElementById('Bank').innerHTML = "Банк " + parseInt(localStorage.bank) + " ₽"; // вывод 3 
 							}
 						}else{
 								document.getElementById('ShopBot2').innerHTML = "Куплен"
-								document.getElementById('Bank').innerHTML = "Банк " + (parseInt(localStorage.bank) + parseInt(localStorage.Money2)) + " ₽"; // вывод 2 
+								localStorage.bank = (parseInt(localStorage.bank) + parseInt(localStorage.Money2))
+								document.getElementById('Bank').innerHTML = "Банк " + parseInt(localStorage.bank) + " ₽"; // вывод 2 
 						}
 					}else{
 						
