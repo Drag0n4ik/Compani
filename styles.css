@@ -3,7 +3,7 @@
 	padding: 0;-webkit-touch-callout: none;
            
 }
-#MenuBottonPlay , #MenuBottonReference , #MenuBottonAgreement{
+#MenuBottonPlay , #MenuBottonReference , #MenuBottonAgreement , #MenuBotton{
   -webkit-user-select: none;   
   -khtml-user-select: none;    
   -moz-user-select: none;      
