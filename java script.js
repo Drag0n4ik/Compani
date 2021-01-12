@@ -156,6 +156,9 @@ function update_player(){
 			localStorage.bank = parseInt(localStorage.bank) ;
 			GL = 1;
 			localStorage.setItem('trati', 0);
+			document.getElementById('StoimostDobihu_1').innerHTML = parseInt(localStorage.MonX1) + "<br>" + " Добыча + 1 ₽";
+		document.getElementById('StoimostDobihu_2').innerHTML = parseInt(localStorage.MonX2) + "<br>" + " Добыча + 3 ₽";
+		document.getElementById('StoimostDobihu_3').innerHTML = parseInt(localStorage.MonX3) + "<br>" + " Добыча + 5 ₽";
 		}else{
 
 				
